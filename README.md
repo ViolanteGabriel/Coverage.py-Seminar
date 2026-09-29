@@ -343,26 +343,6 @@ coverage html
 
 Confirme dois testes, 86% na coluna `Cover` e quatro branches parciais no ambiente de referência. Isso também substitui o relatório HTML da execução final pelo inicial.
 
-## Repositório Git e publicação
-
-O nome de apresentação é **Coverage.py Seminar**. Use `Coverage.py-Seminar` como nome do repositório remoto, sem espaços. O projeto está preparado como repositório Git independente na pasta `coverage_py_demo`, com branch `main`, commit inicial e arquivos gerados ignorados.
-
-Para conferir o estado local:
-
-```bash
-git status
-git log -1 --oneline
-```
-
-Para publicar, crie um repositório remoto vazio chamado `Coverage.py-Seminar`, sem adicionar README, licença ou `.gitignore` pelo serviço. Substitua `SEU_USUARIO` pelo seu usuário nos comandos abaixo:
-
-```bash
-git remote add origin https://github.com/SEU_USUARIO/Coverage.py-Seminar.git
-git push -u origin main
-```
-
-A publicação requer sua conta e autenticação no serviço. O projeto entregue não configura um remoto fictício e não publica nada automaticamente.
-
 ## Mensagem final
 
 **Alta cobertura de linhas não significa, sozinha, que todos os comportamentos do sistema foram testados.**
