@@ -1,13 +1,15 @@
-# Teste para completar a demonstração
+# Cenário adicional
 
-Copie somente a função `test_cliente_comum_sem_cupom_e_entrega_normal`
-de `missing_test.py` para o final de `tests/test_checkout.py` e salve.
-Os imports necessários já estão no arquivo de destino.
+`missing_test.py` verifica um pedido de R$ 80,00 sem premium, sem cupom e com entrega normal. O resultado esperado é desconto zero, frete de R$ 20,00 e total de R$ 100,00.
 
-O diretório está fora de `tests`, e o nome `missing_test.py` não corresponde
-ao padrão `test_*.py` configurado no projeto. Isso impede sua coleta normal
-pelo pytest. Ele será usado apenas na segunda parte da apresentação.
+Esse cenário exercita as quatro saídas falsas não percorridas pela suíte inicial. Está fora de `tests` e não segue o padrão `test_*.py`, por isso não é coletado na execução padrão.
 
-O cenário de R$ 80,00 percorre os quatro caminhos falsos que faltam:
-sem premium, sem SAVE10, sem frete grátis e sem entrega expressa.
-Consulte o README principal para os comandos e resultados medidos.
+Execute os três testes sem modificar arquivos:
+
+```bash
+python -m coverage erase
+python -m coverage run --branch -m pytest -q tests demo_solution/missing_test.py
+python -m coverage report -m
+```
+
+Veja o [README do projeto](../README.md) para a descrição das regras, instalação, métricas e limitações.

@@ -8,3 +8,6 @@ htmlcov/
 *.egg-info/
 build/
 dist/
+
+# Material interno de preparação e roteiro (não entregar ao professor)
+.apresentacao-local/
